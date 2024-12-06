@@ -5,9 +5,9 @@ import axios from 'axios'
 import { GetArticles, GetUserInfo } from './gglQueries'
 
 const API_DOMAIN = 'https://api.github.com'
-const REPO_URL = `${API_DOMAIN}/repos/jrainlau/jrainlau.github.io`
-const SERVER = 'https://api.jrainlau.now.sh/github'
-// const SERVER = 'http://localhost:3000/github'
+const REPO_URL = `${API_DOMAIN}/repos/luckypoem/blog-articles`
+//const SERVER = 'https://api.jrainlau.now.sh/github'
+const SERVER = 'http://localhost:2000/github'
 
 export const $fetch = ({ url, method = 'get', data, headers = {} }) => {
   const option = {
